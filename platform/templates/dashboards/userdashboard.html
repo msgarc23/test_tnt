@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}User Dashboard - TnT{% endblock %}
+
+{% block content %}
+<div class="card-custom">
+    <h1>User Dashboard</h1>
+
+    <p>Welcome, {{ current_user.username }}!</p>
+
+    <h2>Manage your account</h2>
+
+    <ul class="dashboard-links">
+        <li>Portfolio</li>
+        <li>Account and Fund Management</li>
+        <li>Order History</li>
+    </ul>
+</div>
+{% endblock %}
